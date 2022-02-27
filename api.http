@@ -1,0 +1,28 @@
+###CHECK API STATUS
+
+GET http://localhost:8080/actuator
+
+###READ ALL VACCINATION RECORDS
+
+GET http://localhost:8080/api/vaccination
+
+### READ VACCINATION BY ID
+
+GET http://localhost:8080/api/vaccination/1
+
+### CREATE VACCINATION
+POST http://localhost:8080/api/vaccination
+Content-Type: application/json
+Accept: application/json
+
+{
+  "identificationNumber": "901380333V",
+  "firstName": "John",
+  "lastName": "Doe",
+  "addressLine01": "Random Street",
+  "addressLine02": "Random Village",
+  "city": "Random City",
+  "serialNumber": "A-2029-303949-2929",
+  "dose": 1,
+  "brand": "PFIZER"
+}
